@@ -38,7 +38,8 @@
         <activity android:name=".Standings"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:launchMode="singleInstance"
-            android:parentActivityName=".HomeScreenActivity"/>
+            android:parentActivityName=".HomeScreenActivity">
+        </activity>
     </application>
 
 </manifest>

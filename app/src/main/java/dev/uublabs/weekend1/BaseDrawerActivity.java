@@ -48,6 +48,12 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
     }
+
+    @Override
+    public boolean onNavigateUp() {
+        return true;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -61,7 +67,9 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
     {
         if (drawerLayout.isDrawerOpen(GravityCompat.START))
         {
-            drawerLayout.closeDrawer(GravityCompat.START);
+            if (drawerLayout != null) {
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
         }
         else
         {
@@ -128,6 +136,8 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
             {
                 return true;
             }
+            case android.R.id.home:
+                return true;
             default:
             {
                 return super.onOptionsItemSelected(item);
