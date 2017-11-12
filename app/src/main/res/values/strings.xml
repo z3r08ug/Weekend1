@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">New England Patriots</string>
+    <string name="home">Home</string>
+    <string name="roster">Roster</string>
+    <string name="schedule">Schedule</string>
+    <string name="standings">Standings</string>
+
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string name="title_activity_roster">RosterActivity</string>
+</resources>
